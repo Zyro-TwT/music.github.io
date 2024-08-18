@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head class="head">
+  <title>My Playlist</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .head {
+      background-image: url(music.jpg);
+    }
+
+    body {
+      background-image: url(mountine.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Style the header & topnav */
+    .header {
+      padding-top: 7.5%;
+      text-align: center;
+
+    }
+
+    .topnav {
+      background-color: rgb(168, 168, 168, 0.7);
+      border-radius: 10px;
+      width: 0px;
+      transition: 2s;
+      height: auto;
+      position: absolute;
+      left: 0%;
+      top: 0%;
+      margin: 5px;
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: #ffffff;
+      padding: 8%;
+      text-decoration: none;
+    }
+
+    .icon {
+      position: absolute;
+      right: 0%;
+      top: 0%;
+      width: 50px;
+      height: auto;
+      margin: 5px;
+      background-color: rgb(168, 168, 168, 0.7);
+      border-radius: 10px;
+    }
+
+      .icon a {
+        color: #ffffff;
+        float: right;
+        display: block;
+        text-decoration: none;
+        padding: 30%;
+      }
+    /* Change color on hover */
+    .topnav:hover {
+      width: 180px;
+    }
+    
+    .topnav a:hover {
+      color: black;
+    }
+
+    .icon a:hover {
+      color: black;
+    }
+
+    /* Create three unequal columns that floats next to each other */
+    .column {
+      float: left;
+      padding: 10px;
+    }
+
+    /* Left and right column */
+    .column.side {
+      margin-top: 10px;
+      width: 25%;
+      height: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      background-color: rgb(168, 168, 168, 0.7);
+      border-radius: 10px;
+      margin-top: 25px;
+      overflow: auto;
+      scroll-behavior: smooth;
+    }
+
+    .about {
+      font-size: 2vmax;
+      text-align: center;
+    }
+
+    /* Middle column */
+    .column.middle {
+      width: 50%;
+      margin-top: 10px;
+    }
+
+    .img {
+      border-radius: 15px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .video {
+      padding-left: 50px;
+      position: relative;
+
+    }
+
+    /* Clear floats after the columns */
+    .row::after {
+      display: table;
+      clear: both;
+    }
+
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+
+      .column.side,
+      .column.middle {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <h1><strong>MAHER ZAIN</strong></h1>
+    <p style="font-size: 3vmin;">Playlist Islamic</p>
+    <div class="topnav">
+      <a
+        href="https://www.youtube.com/redirect?event=channel_description&redir_token=QUFFLUhqbm5xdHdHRVRuZXJpODFkMXd0VERqd2tUSEFFUXxBQ3Jtc0ttYnZVMDUyZHMyQWxjWmhHMEVIQjVtWTRNSUNPOXEwaGlDRExsYkJnRmExTUhiTkRmbjF1ZXhJMkE3X1NPUHcyX2NmSzVCbTJDdS1QUTNUSXA2Ukx1ejc2ZmQwRlotaWh0SUNDcjBsTklQVFZ5bkVXRQ&q=https%3A%2F%2Ftwitter.com%2Fmaherzain"><i
+          class="bi bi-twitter-x"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-twitter-x" viewBox="0 0 16 16">
+          <path
+            d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+        </svg></a>
+      <a href="http://www.youtube.com/@MaherZain"><i class="bi bi-youtube"></i><svg xmlns="http://www.w3.org/2000/svg"
+          width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+          <path
+            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+        </svg></a>
+      <a
+        href="https://www.youtube.com/redirect?event=channel_description&redir_token=QUFFLUhqbFVzSzVjSnNzLTdaZ196R1laYjU3MURjMzVuZ3xBQ3Jtc0tsU1V5M0lRUWUzeDhfNHBOcnQ5cGRkMmhvSlEzdy16U0Z5bmlXWTVONlVDOWRodk5SNjJIVHpiMWJiSkVJeGtlWktLMkNTeTdKaWhYY0Y4alR2Rmd6cjJBRDNQTkpESGRVMnpfcVhEcGM4S01Kc010Zw&q=https%3A%2F%2Fwww.facebook.com%2FMaherZain"><i
+          class="bi bi-facebook"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-facebook" viewBox="0 0 16 16">
+          <path
+            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+        </svg></a>
+      <a
+        href="https://www.youtube.com/redirect?event=channel_description&redir_token=QUFFLUhqa1puZUpHRzRWR28yaXVUS05vNkRJWVF5WTRhZ3xBQ3Jtc0tteDNFTUNQc3pGcDJQYXNKN1lDOFZ5TXFSTmU0MXcyNUhQanB6ZFJjUUk2bDVUNEtoSlBmQXVGaDY2TWZraDcza2taaXB5bW1waFliREVtUThMVXJaWFY1N3hLNW1WLVY1RWJteW5FNjJmRXlvcUxiNA&q=https%3A%2F%2Fsoundcloud.com%2Fberyl-alane"><i
+          class="bi bi-cloud-fog2-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-cloud-fog2-fill" viewBox="0 0 16 16">
+          <path
+            d="M8.5 3a5 5 0 0 1 4.905 4.027A3 3 0 0 1 13 13h-1.5a.5.5 0 0 0 0-1H1.05a3.5 3.5 0 0 1-.713-1H9.5a.5.5 0 0 0 0-1H.035a3.5 3.5 0 0 1 0-1H7.5a.5.5 0 0 0 0-1H.337a3.5 3.5 0 0 1 3.57-1.977A5 5 0 0 1 8.5 3" />
+        </svg></a>
+    </div>
+    <div class="icon">
+      <a href="https://icons.getbootstrap.com/"><i class="bi bi-arrow-right-circle-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+          <path
+            d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+        </svg></a>
+    </div>
+  </div>
+
+
+  <section>
+    <div class="row">
+      <div class="column side">
+        <h2 class="about"><strong>Maher Zain</strong></h2>
+        <p>Maher Zain adalah seorang penyanyi, penulis lagu, dan produser musik asal Lebanon yang terkenal di seluruh
+          dunia, terutama di komunitas Muslim. Lahir pada 16 Maret 1981 di Tripoli, Lebanon, Maher Zain dikenal karena
+          musiknya yang menggabungkan genre pop dan R&B dengan lirik-lirik yang memiliki tema spiritual dan religius.
+        </p>
+      </div>
+
+      <div class="column middle">
+        <img class="img" src="Maher_Zain.jpg">
+      </div>
+
+      <div class="column side">
+        <div>
+          <h2 style="text-align: center;">MUSIC AND VIDEO</h2>
+        </div>
+        <div class="video">
+          <iframe width="80%" src="https://www.youtube.com/embed/tBbdSzwxqyY?si=aanGOMt_EOw7ZAZm"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="80%" src="https://www.youtube.com/embed/8RB02rk1leM?si=9q-PSLuwUwhvJk5X"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="80%" src="https://www.youtube.com/embed/FnUPY_bzXmQ?si=PN8yHdAdbpMXShqy"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="80%" src="https://www.youtube.com/embed/B7ZhIZLSzbE?si=biXIH0h2iXN36X4l"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="80%" src="https://www.youtube.com/embed/h-qK9jYAOrM?si=bJPxs8fonneeI1-i"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="80%" src="https://www.youtube.com/embed/_2OIRJuOOtk?si=_TPJX4xQ5H2gIu4J"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="80%" src=//www.youtube.com/embed/6t_jxZGk04E?si=MGleKIqjyRoqVIyC" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
